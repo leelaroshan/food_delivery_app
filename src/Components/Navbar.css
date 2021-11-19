@@ -1,0 +1,65 @@
+
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    /* background-color: #1F4E5A; */
+    background-color: lightblue; 
+    color:black; 
+}
+
+
+
+.logo{
+    width: 100px;
+    height:100px;
+    /* padding:40px; */
+   position:center;
+
+}
+
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    width:75%;
+    list-style: none;
+
+}
+
+
+.search,
+.offers,
+.help,
+.signin,
+.cart{
+    text-decoration: none;
+    color:gray;
+    text-align: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+/* 
+.search,
+.offers,
+.help,
+.signin,
+.cart{
+   font-size: 5vw;
+    } */
+
+
+
+
+   }
+   

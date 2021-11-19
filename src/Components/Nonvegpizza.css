@@ -1,0 +1,42 @@
+
+.container{
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.heading{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+.box{
+    border-bottom: 1px solid gray;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.add-btn-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.add-btn{
+    padding:5px 15px;
+
+    color: green;
+    outline: none;
+    border: 1px solid lightslategray;
+    background-color: transparent;
+
+}
