@@ -6,7 +6,7 @@
     height: 100px;
     width: 100%;
     /* background-color: #1F4E5A; */
-    background-color: lightblue; 
+    background-color: #FBFBFB; 
     color:black; 
 }
 
@@ -23,11 +23,15 @@
 
 .nav-links{
     display: flex;
-    justify-content: center;
+    
+    justify-content: flex-end;
     width:75%;
     list-style: none;
 
 }
+
+
+
 
 
 .search,
@@ -36,9 +40,9 @@
 .signin,
 .cart{
     text-decoration: none;
-    color:gray;
+    color:#292C40;
     text-align: none;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
@@ -47,16 +51,70 @@
 }
 
 
-@media screen and (max-width: 480px) {
+.search:hover{
+  color: #f1a07a;
+}
+.offers:hover{
+  color: #f1a07a;
+}
+.help:hover{
+  color: #f1a07a;
+}
+.signin:hover{
+  color: #f1a07a;
+}
 
-/* 
-.search,
-.offers,
-.help,
-.signin,
-.cart{
-   font-size: 5vw;
-    } */
+.cart:hover{
+  color: #f1a07a;
+}
+
+
+@media screen and (max-width: 414px) {
+
+
+ .navbar-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    /* background-color: #1F4E5A; */
+    background-color: #FBFBFB; 
+    color:black; 
+  }
+
+  .logo{
+    width: 30px;
+    height:30px;
+    /* padding:40px; */
+    float: left;
+   /* position:center; */
+
+  }
+
+  .span{
+    font-size: 5px;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: flex-end;
+    /* width:75%; */
+    list-style: none;
+
+   }
+
+
+ .search,
+ .offers,
+ .help,
+ .signin,
+ .cart{
+  padding: 0px 2px;
+  margin: 0 3px;
+   
+   font-size: 7px;
+    } 
 
 
 

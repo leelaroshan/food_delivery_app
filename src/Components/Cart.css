@@ -1,7 +1,48 @@
 
 .cart-container{
     position: sticky;
-    top: 300px;
+    top: 200px;
     border-right:"1px solid gray"
+}
 
+
+
+.subtotal{
+    font-size: 1vw;
+    background-color: #FFFFFF;
+    padding:5px;
+}   
+
+.checkout-btn{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    /* height: 40px;
+    width: 300px; */
+    background-color: green;
+    color: white;
+    outline: none;
+}
+
+
+
+@media screen and (max-width: 414px) {
+    .cart-container{
+      position: sticky;
+      top: 100px;
+      border-right:"1px solid gray"
+  
+  }
+  .cart-item-name{
+    font-size: 2vw;
+  }
+
+.subtotal{
+    font-size: 2vw;
+}   
+
+  
+    
+ 
 }

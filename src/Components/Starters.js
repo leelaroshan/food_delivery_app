@@ -1,25 +1,31 @@
-import React from 'react';
+import React, {useContext} from 'react'
+import {AppContext} from '../App';
+import {  Button } from "react-bootstrap";
 
 
 const starters = [
     {
+      id : 11,
       name: "Cheesy Garlic Bread",
       price: 270,
       description: "Our In House Mini Ciabatta Loaves Slathered with Herby Garlic Butter and Cheese"      
     },
     {
+       id : 12,
         name: "Truffle Fries",
         price: 280,
         description:  "Our In House Mini Ciabatta Loaves Slathered with Herby Ga "
   
       },
       {
+        id : 13,
         name: "Patatine Fritte",
         price: 235,
         description: "Chicken Morsels & Green Onion with Mozzarella, Drizzled with our Secret BBQ Sauce "
   
       },
       {
+        id : 14,
         name: "Mushroom Pizza Roll",
         price: 350,
         description: "An Italian Favorite Topped with Mozzarella, Lemon Marinated Chicken, Kalamata Olives, Sliced Mushrooms, Yoghurt and Feta Drizzle"
@@ -34,15 +40,26 @@ const starters = [
 
 export default function Starters() {
 
-  const listItems = starters.map(starter => ( 
-    <div className= "box">
+
+  const {cart,setCart}  = useContext(AppContext)
+
+
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+};
+
+
+
+  const listItems = starters.map(item => ( 
+        <div className= "box" key={item.id}>
        <div className="add-btn-div"> 
-         <h3>{starter.name}</h3>
-          <button className="add-btn" type="submit"> Add</button>
+         <h3 className="item-name">{item.name}</h3>
+         <Button className="w-20" variant="outline-secondary" type="submit" onClick={() => addToCart(item)}
+                   style={{fontSize:"1vw",backgroundColor:"transparent",color: "green",padding: "5px 10px"}}> Add</Button>
 
         </div>
-     <p> price:{starter.price}</p>
-      <p>{starter.description}</p>
+     <p> price:{item.price}</p>
+      <p className="description">{item.description}</p>
 
 
     </div>
@@ -53,22 +70,10 @@ export default function Starters() {
     return (
         <div>
               <div className="container">
-                 <h1 className="heading"> Appetizers / Starters</h1>
-                   <h5>{starters.length}Items</h5> 
+                 <h2 className="heading"> Appetizers / Starters</h2>
+                   <p>{starters.length}Items</p> 
                    <div> {listItems} </div>
-                      {/* { starters.map(starter => ( 
-                        <div className= "box">
-                           <div className="add-btn-div"> 
-                             <h3>{starter.name}</h3>
-                              <button className="add-btn" type="submit"> Add</button>
-
-                            </div>
-                         <p> price:{starter.price}</p>
-                          <p>{starter.description}</p>
-
-
-                        </div>
-                        ))} */}
+                     
 
 
                 </div>

@@ -1,20 +1,20 @@
 import React from 'react'
 
 
-import { useState } from 'react';
+import logo from "../Components/Images/s-logo.png";
+import {AiOutlineSearch} from 'react-icons/ai';
+import {BsPerson} from 'react-icons/bs';
+// import {IoHelpBuoyOutline} from 'react-icons/io';
 
-
-
-import {Link} from 'react-router-dom';
 import './Navbar.css';
-import logo from "../Components/Images/s-logo.png"
+
+
 
 
 
 
 export default function Navbar() {
-
-    const [isMobile, setIsMobile] = useState(false);
+   
 
 
     return (
@@ -27,10 +27,10 @@ export default function Navbar() {
         </div>
 
         <ul className= "nav-links">
-            <li className="search">Search</li>
+            <li className="search"><AiOutlineSearch / >Search</li>
             <li className="offers">Offers</li>
             <li className="help">Help</li>
-            <li className="signin">Signin</li>
+            <li className="signin"><BsPerson />Signin</li>
             <li className="cart">Cart</li>
 
         </ul>

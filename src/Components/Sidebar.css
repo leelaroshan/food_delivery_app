@@ -1,49 +1,15 @@
-/* 
-.items li{
-    list-style: none;
-    text-decoration: none;
-    
-}
-
-.nav-text a{
-    
-    
-    width: 100%;
-    color: black; 
-    font-size: 15px; 
-    
-    border-radius: 4px;
-    text-decoration: none ;
-    
-   
-    
-}
-
-.navText{
-    padding-left: 10px;
-    text-decoration: none ;
-}
-
-.active{
-    color: #FC8119;
-    border-bottom: 1px solid green;
-
-} */
-
-
-
-
 
 /* 
 new navbar */
 .nav-menu{
     position: sticky;
-    top: 300px;
+    top: 200px;
     border-right:"1px solid gray"
 
 }
+
 .scrollspy {
-    margin:10px;
+    margin-right:5px;
      
   }
 
@@ -53,7 +19,8 @@ ul {
   ul li {
     
     margin: 10px;
-    padding: 10px 0;
+    padding: 5px 0;
+    font-size: 1vw;
   }
    li a {
     text-decoration: none;
@@ -66,4 +33,21 @@ ul {
   
   .isCurrent a {
     color: #f1a07a;
+  }
+
+
+
+
+
+  /* Code for Mobie view */
+
+  @media screen and (max-width: 414px) {
+    .nav-menu{
+      position: sticky;
+      top: 100px;
+      border-right:"1px solid gray"
+  
+    }
+  
+
   }

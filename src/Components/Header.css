@@ -6,10 +6,17 @@
     top: 0;
     left: 0;
    
+   
     
   }
   
+  .scrolled-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
 
+  }
 .header-bg{
     background-color:#161A29 ;
     width: 100%;
@@ -22,7 +29,66 @@
 
 
 .pizza-img{
-    width: 250px;
-    height: 250px;
-    padding:30px
+    width: 200px;
+    height: 150px;
+    padding:20px
+}
+
+
+.restaurent h3{
+    font-size: 2vw;
+}
+
+.offers-div {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 7px;
+}
+
+/* Responsiveness Mobile view code */
+
+@media screen and (max-width: 414px) {
+
+    .scrolled{
+        position: fixed;
+        top: 0;
+        left: 0;
+       
+        
+      }
+
+    .header-bg{
+        background-color:#161A29 ;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color:white
+    }
+
+  .pizza-img{
+    width: 80px;
+    height: 80px;
+    padding:0px;
+   
+   }
+
+
+ 
+  .restaurent h3{
+    font-size: 3vw;
+}
+
+
+.offers-div {
+  color: white;
+  border: 1px solid white;
+  padding: 3px 5px;
+}
+
+
+
+ 
 }
