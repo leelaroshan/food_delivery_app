@@ -2,9 +2,7 @@ import React, {useState, createContext,useEffect} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
 import { Fragment } from 'react';
-
 
 import './App.css';
 
@@ -53,7 +51,7 @@ export default function App() {
 
 
   return (
-    // <div className="App">
+  
 
     <Fragment> 
     
@@ -70,8 +68,6 @@ export default function App() {
 
 
       <Col  xs={6}   style={{borderLeft:"1px solid gray", paddingRight:"20px"}} ><h3>Pizza </h3>
-         {/* <Switch><Route  path="#nonvegpizza"> */}
-         {/*  xs={4} md={6} lg={} </Route><Route  path="#pizza"> */}
 
          <AppContext.Provider value={{cart, setCart}}>
          <section id="pizza">
@@ -110,8 +106,7 @@ export default function App() {
      
       </Fragment> 
 
-      // </div>
-
+     
      
     
   );

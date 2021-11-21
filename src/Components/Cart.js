@@ -15,13 +15,7 @@ export default function Cart() {
         setCart(hardCopy);
       };
     
-    const increaseCart = (el) => {
-        let hardCopy = [...cart];
-        hardCopy = hardCopy.filter((cartItem) => cartItem.id === el.id);
-        setCart.push(hardCopy)
-
-
-      };
+    
     
 
     const cartItems = cart.map((el) => (
@@ -32,9 +26,9 @@ export default function Cart() {
      
             <Button className="w-20" variant="outline-secondary" type="submit" onClick={() => removeFromCart(el)}
              style={{fontSize:"1vw",backgroundColor:"transparent",color: "green",padding: "5px 5px"}}> Remove</Button>
-          
+{/*           
           <Button className="w-20" variant="outline-secondary" type="submit" onClick={() => increaseCart(el)}
-             style={{fontSize:"1vw",backgroundColor:"transparent",color: "green",padding: "5px 10px"}}> Add</Button>
+             style={{fontSize:"1vw",backgroundColor:"transparent",color: "green",padding: "5px 10px"}}> Add</Button> */}
           {/* <button type="submit"  onClick={ () => increaseCart(el)}>+ </button>  */}
          
         </div>

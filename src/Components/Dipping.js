@@ -6,28 +6,28 @@ import {  Button } from "react-bootstrap";
 
 const beverages = [
     {
-      id : 21,
-      name: "Cola",
+      id : 16,
+      name: "Creamy Garlic Dip",
       price: 80,
 
     },
     {
-      id : 22,
-        name: "Thumbs-up Can 300ml",
+      id : 17,
+        name: "Pesto Dip",
         price: 80,
         
   
       },
       {
-        id : 23,
-        name: "Sprite Can 300ml",
+        id : 18,
+        name: "Naagin Sauce",
         price: 80,
         
   
       },
       {
-        id : 24,
-        name: "Diet Coke Can 300ml",
+        id : 19,
+        name: "Lime Mayo Dip",
         price: 80,
   
       },

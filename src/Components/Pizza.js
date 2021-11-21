@@ -64,7 +64,7 @@ export default function Pizza() {
                    style={{fontSize:"1vw",backgroundColor:"transparent",color: "green",padding: "5px 10px"}}> Add</Button>
 
                       </div>
-                      <p> {item.price}</p>
+                      <p> ${item.price}</p>
                       <p className="description">{item.description}</p>
 
 
