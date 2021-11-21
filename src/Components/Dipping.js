@@ -4,7 +4,7 @@ import {AppContext} from '../App';
 import {  Button } from "react-bootstrap";
 
 
-const beverages = [
+const dippings = [
     {
       id : 16,
       name: "Creamy Garlic Dip",
@@ -38,7 +38,7 @@ const beverages = [
 ]
 
 
-export default function Beverages() {
+export default function Dipping() {
   const {cart,setCart}  = useContext(AppContext)
 
   const addToCart = (item) => {
@@ -50,9 +50,9 @@ export default function Beverages() {
         <div>
 
              <div className="container">
-                 <h2 className="heading"> Beverges</h2>
-                   <p className="item-length">{beverages.length}Items</p> 
-                      { beverages.map(item => ( 
+                 <h2 className="heading"> Dipping Sauce</h2>
+                   <p className="item-length">{dippings.length}Items</p> 
+                      { dippings.map(item => ( 
                         <div  key={item.id} className= "box">
                            <div className="add-btn-div"> 
                              <h3 className="item-name">{item.name}</h3>

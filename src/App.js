@@ -14,6 +14,8 @@ import Pizza from './Components/Pizza'
 import Starters from './Components/Starters';
 import Beverages from './Components/Beverages';
 import Cart from './Components/Cart';
+import Dipping from './Components/Dipping'
+
 
 
 export const AppContext =  createContext(null);
@@ -79,6 +81,10 @@ export default function App() {
         <section id="starters">
         <Starters />
         </section>
+        <section id="dippingsauce">
+        <Dipping />
+        </section>
+
         <section id="beverges">
         <Beverages />
         </section>

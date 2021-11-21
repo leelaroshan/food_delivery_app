@@ -6,7 +6,7 @@
 }
 
 .heading{
-    padding: 10px;
+    padding-top: 10px;
  
 }
 
@@ -15,9 +15,6 @@
     font-size: 15px;
 }
 
-.item-length{
-    border-bottom: 1px solid gray;
-}
 
 .description{
    color: #CACBD0
